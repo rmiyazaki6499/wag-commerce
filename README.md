@@ -42,7 +42,7 @@ E-Commerce Site using Django, Wagtail and Snipcart
   - Go into the project directory to build and run the container with:
 
   ```
-  $ cd tour-of-heros/
+  $ cd wag-commerce/
   $ docker-compose up -d --build
   ```
 
