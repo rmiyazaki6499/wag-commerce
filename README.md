@@ -51,7 +51,14 @@ E-Commerce Site using Django, Wagtail and Snipcart
   Navigate to http://localhost:8000 to view the site on the local server.
 It should look something like this:
 
-![Image](#)
+**Home Page**
+![Skypiea Store Home](https://user-images.githubusercontent.com/41876764/90873445-08f0a200-e353-11ea-995e-35291338f318.png)
+
+**Product Page**
+![Breath Dial Details](https://user-images.githubusercontent.com/41876764/90873592-3e958b00-e353-11ea-8184-d0f61f23d91c.png)
+
+**Checkout**
+![Snipcart](https://user-images.githubusercontent.com/41876764/90873643-54a34b80-e353-11ea-8fc8-0b28f7166cf2.png)
   
   ### Cleaning up the Container and Image
 
