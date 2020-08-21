@@ -1,32 +1,84 @@
+![Wagtail](https://miro.medium.com/max/2536/1*qkPzyorkZ1-1NXbMLiE6gg.jpeg)
+
 # wag-commerce project - Skypiea Store
 E-Commerce Site using Django, Wagtail and Snipcart
 
-To execute this project you will need Python 3.
-Download it here:
-https://www.python.org/downloads/
+## Table of contents
 
-Once you have Python you will need pip which is a package installer to download all necessary libraries and frameworks of the project.
-Installation directions are here:
-https://pip.pypa.io/en/stable/installing/
+- [Setting up the project](#setting-up-the-project)
+- [Setting up the project with Docker](#setting-up-the-project-with-docker)
+- [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
-Once you have Python 3 and pip you will be able to download packages. 
-The first package to download will be pipenv to manage our libraries and dependencies. 
+## Setting up the project
 
-In your terminal type the commands:
-``` $ pip install pipenv ```
-This will install pipenv. 
+  Start by cloning the project with the command:
+  ```
+  $ git clone https://github.com/rmiyazaki6499/wag-commerce.git
+  ```
+  
+  ## Setting up the project with Docker
 
-Once downloaded go to your project directory and type in the commands:
-``` $ pipenv shell ```
+  For those that are not interested in setting up the project manually or would simply not have to worry about downloading node.js and its dependencies, I have      created a Dockerfile and docker-compose.yml file to help create a container with everything you would need to run the **mern-app**.
 
-This will create a pipfile as well as a pipfile.lock which will keep all of your dependencies for the project.
-It will also initiate the virtual environment for you to isolate your project from any global dependencies. 
+  ### Install Docker
 
-Once you are in the virtual environment we will download the necessary frameworks.
-First let's download Django using:
-``` $ pipenv install django ```
-This will install Django
+  To make this as easy as possible, we will be using *Docker Compose* to creat our container.
 
-Next let's download Wagtail:
-``` $ pipenv install wagtail ```
+  - If you do not have Docker yet, start by downloading it if you are on a Mac or Windows:
+  https://www.docker.com/products/docker-desktop
 
+  - Or if you are on a Linux Distribution follow the directions here:
+  https://docs.docker.com/compose/install/
+
+  - To confirm you have Docker Compose, open up your terminal and run the command below:
+
+  ```
+  $ docker-compose --version
+  docker-compose version 1.26.2, build eefe0d31
+  ```
+  
+  - Go into the project directory to build and run the container with:
+
+  ```
+  $ cd tour-of-heros/
+  $ docker-compose up -d --build
+  ```
+
+  **This may take a few moments**
+  
+  Navigate to http://localhost:8000 to view the site on the local server.
+It should look something like this:
+
+![Image](#)
+  
+  ### Cleaning up the Container and Image
+
+  - To stop the container from running, use `<Ctrl-C>` twice.
+  - To close down the container use the command:
+
+  ```
+  $ docker-compose down
+  ```
+  - Then to clean up the container and image which we are no longer using use the command:
+
+  ```
+  $ docker system prune -fa
+  ```
+
+  - Confirm that the container and image is no longer there with:
+
+  ```
+  $ docker system df -v
+  ```
+
+## Inspiration
+
+E-Commerce for Django Developers (with Wagtail Tutorial)
+by Charles Ouellet
+https://snipcart.com/blog/django-ecommerce-tutorial-wagtail-cms
+
+## Contact
+
+[Ryuichi Miyazaki](https://github.com/rmiyazaki6499)
