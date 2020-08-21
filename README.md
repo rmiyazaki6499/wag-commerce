@@ -82,9 +82,9 @@ It should look something like this:
 
 ## Inspiration
 
-E-Commerce for Django Developers (with Wagtail Tutorial)
-by Charles Ouellet
-https://snipcart.com/blog/django-ecommerce-tutorial-wagtail-cms
+[E-Commerce for Django Developers (with Wagtail Tutorial)
+by Charles Ouellet]
+(#https://snipcart.com/blog/django-ecommerce-tutorial-wagtail-cms)
 
 ## Contact
 
