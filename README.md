@@ -1,4 +1,4 @@
-![Wagtail](https://miro.medium.com/max/2536/1*qkPzyorkZ1-1NXbMLiE6gg.jpeg)
+G![Wagtail](https://miro.medium.com/max/2536/1*qkPzyorkZ1-1NXbMLiE6gg.jpeg)
 
 # wag-commerce project - Skypiea Store
 E-Commerce Site using Django, Wagtail and Snipcart
@@ -82,7 +82,7 @@ It should look something like this:
 
 ## Inspiration
 
-![E-Commerce for Django Developers (with Wagtail Tutorial)
+[E-Commerce for Django Developers (with Wagtail Tutorial)
 by Charles Ouellet]
 (https://snipcart.com/blog/django-ecommerce-tutorial-wagtail-cms)
 
